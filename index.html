@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 id="title">DOM</h1>
+	<p id="description">DOM Manipulation with forms</p>
+<form id="form">
+			First Name:
+				<input type="text" name="first-name" id="first-name" >
+				<br>
+			Last Name:
+				<input type="text" name="lname" id="last-name">
+			    <br>
+			Address:
+				<textarea name="add" id="address"></textarea>
+				<br>
+				
+			Pin Code:
+				<input type="text" name="pin" id="pincode">
+				<br>
+			Gender:
+				<select name="gen" id="gender"><option>Male</option><option>Female</option></select>
+				<br>
+			Food:
+				<select name="food" id="food"><option>Briyani</option><option>Fried Rice</option><option>Chilli Chicken</option><option>BBQ</option><option>Tandoori Chicken</option><option>Kabab</option></select>
+				<br>
+			State:
+				<input type="text" name="state" id="state">
+				<br>
+			Country:
+				<input type="text" name="country" id="country">
+				<br>
+				
+			<input type="button" name="button" id="clear" value="Clear" onclick="Clear()" ></td>
+			<input type="button" name="button" id="submit" value="Submit" onclick="AddRow()"></td>
+</form>
+
+		<div>		
+
+		<table border="4" id="show">
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Address</th>
+					<th>Pin code</th>
+                    <th>Gender</th>
+					<th>Food</th>
+					<th>State</th>
+					<th>Country</th>
+				</tr>
+			</thead>
+		</table>
+		</div>
+
+	
+	<script src="script.js"></script>
+	<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
